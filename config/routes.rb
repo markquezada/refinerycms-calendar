@@ -6,9 +6,11 @@ Refinery::Core::Engine.routes.draw do
 
     resources :events, :only => [:index, :show]
 
+    get 'events/month/:start_date' => 'events#month',
+        as: :monthly_events
+
     resources :venues, :only => [:index, :show]
   end
-
 
   namespace :calendar, :path => '' do
     namespace :admin, :path => Refinery::Core.backend_route do

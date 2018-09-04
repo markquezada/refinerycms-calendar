@@ -50,6 +50,16 @@ de:
           register: 'Für diese Veranstaltung anmelden'
           view_on_map: 'Auf Karte anzeigen'
           other: Andere Veranstaltungen
+        index:
+          no_items_yet: Noch keine Veranstaltungen.
+        month:
+          for_month: Im %{month} %{year}
+
+  simple_calendar:
+    month_calendar:
+      previous_month: Voriger Monat
+      next_month: Nächster Monat
+
   activerecord:
     attributes:
       refinery/calendar/venue:
